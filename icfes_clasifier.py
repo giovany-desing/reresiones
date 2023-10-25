@@ -8,7 +8,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import BaggingClassifier
 
 
-from sklearn.tree import DecisionTreeClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.svm import SVC
 
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -21,7 +22,7 @@ warnings.simplefilter('ignore')
 
 icfes = pd.read_csv('/Users/giovanysamaca/Desktop/icfes_git/data.csv')
 
-icfes = icfes.sample(3000)
+icfes = icfes.sample(000)
 
 pd.options.display.float_format = '{:,.0f}'.format
 
