@@ -8,8 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import BaggingClassifier
 
 
-from sklearn.linear_model import LogisticRegression
-from sklearn.svm import SVC
+from sklearn.tree import DecisionTreeClassifier
 
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -40,7 +39,7 @@ preprocessed_data = StandardScaler().fit_transform(raw_data)
 X_train, X_test, y_train, y_test = train_test_split(raw_data, target, test_size=0.3, random_state=0)
 
 
-model = SVC()
+model = DecisionTreeClassifier()
 # Aplico bagging al algoritmo de clasificacion
 bag_class = BaggingClassifier(base_estimator=model, n_estimators=50).fit(X_train, y_train)
 
