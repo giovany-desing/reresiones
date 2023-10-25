@@ -13,7 +13,7 @@ warnings.simplefilter("ignore")
 
 icfes = pd.read_csv('/Users/giovanysamaca/Desktop/icfes_git/data.csv')
 
-icfes = icfes.sample(5000)
+icfes = icfes.sample(6000)
 
 #plt.figure(figsize=(10, 6))
 #sns.histplot(data=icfes, x='PUNT_GLOBAL', hue='GRUPO', multiple='stack')
