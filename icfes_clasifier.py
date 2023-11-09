@@ -22,7 +22,7 @@ warnings.simplefilter('ignore')
 
 icfes = pd.read_csv('/Users/giovanysamaca/Desktop/icfes_git/data.csv')
 
-icfes = icfes.sample(6000)
+icfes = icfes.sample(7000)
 
 pd.options.display.float_format = '{:,.0f}'.format
 
