@@ -7,8 +7,6 @@ from sklearn.model_selection import train_test_split
 
 from sklearn.ensemble import BaggingClassifier
 
-
-from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 
 import matplotlib.pyplot as plt
