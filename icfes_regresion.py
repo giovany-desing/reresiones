@@ -15,12 +15,6 @@ icfes = pd.read_csv('/Users/giovanysamaca/Desktop/icfes_git/data.csv')
 
 icfes = icfes.sample(6000)
 
-#plt.figure(figsize=(10, 6))
-#sns.histplot(data=icfes, x='PUNT_GLOBAL', hue='GRUPO', multiple='stack')
-#plt.title('Clustering con MiniBatchKMeans')
-#plt.xlabel('Feature1')
-#plt.ylabel('Feature2')
-#plt.show()
 
 X = icfes.drop(['PUNT_GLOBAL'], axis=1)
 y = icfes[['PUNT_GLOBAL']]
