@@ -25,3 +25,20 @@ model = Ridge(alpha=0.02)
 model.fit(X_train,y_train)
 
 print("Score Ridge", model.score(X_test, y_test))
+
+
+#grafico la cantidad de estudiantes por genero
+fig, ax = plt.subplots()
+
+gener = icfes['ESTU_GENERO'].unique()
+counts = icfes['ESTU_GENERO'].value_counts()
+bar_labels = ['Hombre', 'Mujer']
+bar_colors = ['tab:red', 'tab:blue']
+
+ax.bar(gener, counts, label=bar_labels, color=bar_colors)
+
+ax.set_ylabel('Estudiantes')
+ax.set_title('Genero de estudiantes')
+ax.legend(title='Genero')
+
+plt.show()
