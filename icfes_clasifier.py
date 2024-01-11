@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+
 
 from sklearn.ensemble import BaggingClassifier
 
@@ -22,9 +24,12 @@ icfes = pd.read_csv('/Users/giovanysamaca/Desktop/icfes_git/data.csv')
 
 icfes = icfes.sample(7000)
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> laboratorio
 plt.figure(figsize=(10, 6))
 sns.relplot(data=icfes, x="PUNT_GLOBAL", y="MOD_INGLES_PNAL")
 plt.title('Correlacion en puntaje global e ingles')
