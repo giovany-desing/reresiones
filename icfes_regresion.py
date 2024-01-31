@@ -1,3 +1,4 @@
+# este es mi proyecto de machine learning de practica
 import pandas as pd
 
 from sklearn.linear_model import Ridge
