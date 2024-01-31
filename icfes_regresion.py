@@ -1,4 +1,4 @@
-# este es mi proyecto de machine learning de practica
+# este es mi proyecto de machine learning de practica y me gusta
 import pandas as pd
 
 from sklearn.linear_model import Ridge
