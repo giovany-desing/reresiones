@@ -22,7 +22,7 @@ warnings.simplefilter('ignore')
 
 icfes = pd.read_csv('/Users/giovanysamaca/Desktop/icfes_git/data.csv')
 
-icfes = icfes.sample(7000)
+icfes = icfes.sample(8000)
 
 plt.figure(figsize=(10, 6))
 sns.relplot(data=icfes, x="PUNT_GLOBAL", y="MOD_INGLES_PNAL")
